@@ -19,11 +19,11 @@ Blockchain technology is a revolutionary concept in digital security and distrib
 
 The following routes are provided by the Flask server:
 
-• /mine [GET]: Mines a new block and adds it to the chain.  
-• /transactions/new [POST]: Adds a new transaction to the list of pending transactions.  
-• /chain [GET]: Returns the full blockchain.  
-• /nodes/register [POST]: Registers new nodes to the network.  
-• /nodes/resolve [GET]: Initiates the consensus algorithm to resolve conflicts and update the chain.  
+• `/mine` [GET]: Mines a new block and adds it to the chain.  
+• `/transactions/new` [POST]: Adds a new transaction to the list of pending transactions.  
+• `/chain` [GET]: Returns the full blockchain.  
+• `/nodes/register` [POST]: Registers new nodes to the network.  
+• `/nodes/resolve` [GET]: Initiates the consensus algorithm to resolve conflicts and update the chain.  
 
 # 🧩 Technical Details
 
@@ -36,24 +36,23 @@ The following routes are provided by the Flask server:
 
 bash  
 Copy code  
-├── blockchain.py         # Core blockchain logic  
-├── app.py                # Flask server with API routes  
+├── blockchain.py         # Core blockchain logic   
 ├── requirements.txt      # Dependencies  
 └── README.md             # Project description  
 
 # 🎉 Sample Interactions  
 
-• Mine a Block: Access http://localhost:5000/mine to create and add a new block.  
-• Add Transactions: Send a POST request to http://localhost:5000/transactions/new with a JSON payload:  
+• Mine a Block: Access `http://localhost:5000/mine` to create and add a new block.  
+• Add Transactions: Send a POST request to `http://localhost:5000/transactions/new` with a JSON payload:  
   json  
-  Copy code  
+  `Copy code  
   {
       "sender": "Alice",  
       "recipient": "Bob",  
       "amount": 10  
-  }  
-• Register Nodes: Use http://localhost:5000/nodes/register to add new nodes.  
-• Resolve Conflicts: Visit http://localhost:5000/nodes/resolve to execute the consensus algorithm.  
+  }`
+• Register Nodes: Use `http://localhost:5000/nodes/register` to add new nodes.  
+• Resolve Conflicts: Visit `http://localhost:5000/nodes/resolve` to execute the consensus algorithm.  
 
 # 🧑‍💻 Contributions & Feedback
 
