@@ -41,26 +41,6 @@ Copy code
 ├── requirements.txt      # Dependencies  
 └── README.md             # Project description  
 
-# 🌟 Getting Started
-
-Clone the repository:
-
-bash  
-Copy code  
-git clone https://github.com/yourusername/simple-blockchain.git  
-cd simple-blockchain  
-
-Install dependencies:  
-
-bash  
-Copy code  
-pip install -r requirements.txt  
-Run the server:  
-
-bash  
-Copy code  
-python app.py -p 5000  
-
 # 🎉 Sample Interactions  
 
 • Mine a Block: Access http://localhost:5000/mine to create and add a new block.  
