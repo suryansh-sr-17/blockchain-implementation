@@ -43,16 +43,21 @@ Copy code
 # 🎉 Sample Interactions  
 
 • Mine a Block: Access `http://localhost:5000/mine` to create and add a new block.  
+  ![mine](readme_images/mine.png)  
 • Add Transactions: Send a POST request to `http://localhost:5000/transactions/new` with a JSON payload:  
-  json  
   Copy code:  
   `{
-      "sender": "Alice",  
-      "recipient": "Bob",  
-      "amount": 10  
+      "sender": "sender-address",  
+      "recipient": "recipient-address",  
+      "amount": 1  
   }`  
+  ![transactions/new](readme_images/transac_new.png)  
+• Display the blockchain: Use `http://localhost:5000/chain` to add new nodes.  
+  ![nodes/register](readme_images/chain1.png)  
+  ![nodes/register](readme_images/chain2.png) 
 • Register Nodes: Use `http://localhost:5000/nodes/register` to add new nodes.  
-• Resolve Conflicts: Visit `http://localhost:5000/nodes/resolve` to execute the consensus algorithm.  
+  ![nodes/register](readme_images/nodes_register.png)  
+• Resolve Conflicts: Visit `http://localhost:5000/nodes/resolve` to execute the consensus algorithm (when multiple blockchains have been created via different ports or devices).  
 
 # 🧑‍💻 Contributions & Feedback
 
