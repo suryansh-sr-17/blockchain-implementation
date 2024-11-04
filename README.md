@@ -45,12 +45,12 @@ Copy code
 • Mine a Block: Access `http://localhost:5000/mine` to create and add a new block.  
 • Add Transactions: Send a POST request to `http://localhost:5000/transactions/new` with a JSON payload:  
   json  
-  `Copy code  
-  {
+  Copy code:  
+  `{
       "sender": "Alice",  
       "recipient": "Bob",  
       "amount": 10  
-  }`
+  }`  
 • Register Nodes: Use `http://localhost:5000/nodes/register` to add new nodes.  
 • Resolve Conflicts: Visit `http://localhost:5000/nodes/resolve` to execute the consensus algorithm.  
 
